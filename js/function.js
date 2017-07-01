@@ -75,11 +75,17 @@ function sendEmail(params) {
 	xhttp.onreadystatechange = function () {
 			if (this.readyState == 4 && this.status == 200) {
 				//alert("OK:" + this.responseText);
-				if(this.responseText=="success"){
+				var myResult = JSON.parse(this.responseText);
+				console.log(myResult);
+				debugger;
+				if(myResult.status=="success"){
 					selectModal(2);
+					//debugger;
 				}else{
 					selectModal(3);
+					//debugger;
 				}
+				//debugger;
 				resetForm();
 			}
 		}
