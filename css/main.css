@@ -988,6 +988,7 @@ figcaption.mask span {
 }
 #contact-us {
   background:url(../img/icons/contact-bg.jpg)no-repeat fixed;
+	    background-color: #0c0704;
   padding: 80px 0px 80px 0px;
   
 }
